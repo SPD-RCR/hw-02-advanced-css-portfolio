@@ -1,0 +1,19 @@
+/* spd-rcr/hw-02-advanced-css-portfoliio/assets/css/style.css */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9dcd6;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  background-color: #2a607c;
+}
