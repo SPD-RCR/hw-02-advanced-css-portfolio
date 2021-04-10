@@ -12,31 +12,41 @@
 </head>
 <body>
     <header>
-        <h1>Robet George</h1>
-        <img alt="Robert George photo" height="" width="" src=""  />
+        <div class="headerTitle">
+            <h1>Robet George</h1>
+        </div>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#">Resume</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="subtitle">
+
+    <header class="subheader">
+        <div id="myPhoto">
+            <img alt="Robert George photo" src="./assets/images/Robert_George_photo.jpg" height="100px" width="100px" />
+        </div>
+        <div class="subtitle">
             <h2>cool subtitle here</h2>
-        </section>
-        <section class="row">
-            <div class="title">About Me</div>
+        </div>
+    </header>
+    
+    <main>
+        <section>
+            <div class="sectionTitle">
+                <h3>About Me</h3>
+            </div>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex optio fugiat tenetur mollitia repellendus ad maiores maxime ea quibusdam voluptas minima minus hic, dolorem eligendi provident quis sunt consequuntur.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ex optio fugiat tenetur mollitia repellendus ad maiores maxime ea quibusdam voluptas minima minus hic, dolorem eligendi provident quis sunt consequuntur.</p>
             </div>
         </section>
 
-        <section class="row">
-            <div class="title">Work</div>
+        <section>
+            <div class="sectionTitle"><h3>Work</h3></div>
             <div class="content">
                 <div class="work-box-big" id="work01">
                     <div class="title-box">
@@ -68,8 +78,8 @@
             </div>
         </section>
 
-        <section class="row">
-            <div class="title">Contact Me</div>
+        <section>
+            <div class="sectionTitle">Contact Me</div>
             <div class="content">
                 <ul id="contact_me">
                     <li>Phone</li>
@@ -80,8 +90,8 @@
             </div>
         </section>
 
-        <section class="row">
-            <div class="title">Resume</div>
+        <section>
+            <div class="sectionTitle">Resume</div>
             <div class="content"></div>
         </section>
     </main>

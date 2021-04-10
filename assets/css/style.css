@@ -10,10 +10,75 @@ body {
   background-color: #d9dcd6;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  color: #fff;
+  color: #505050;
+}
+a {
+  color: cadetblue;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 3% 3% 0;
+  background-color: #505050;
+  height: 100%;
+}
+.headerTitle {
+  font-size: 20pt;
+  background-color: cadetblue;
+  border-top-right-radius: 10pt;
+  border-bottom-left-radius: 10pt;
+  padding: 2%;
+}
+h1 {
+  padding-left: 30px;
 }
 
-header {
+nav ul li {
+  display: inline;
+  padding: 10px 10px 10px 20px;
+}
+
+header .subheader {
+  background-color: slategray;
+  height: 100px;
+}
+.myPhoto {
+  margin: 10px 10px 10px 50px;
+}
+.subtitle {
+  background-color: cadetblue;
+  border-top-right-radius: 10pt;
+  border-bottom-left-radius: 10pt;
+  padding: 1%;
+  margin: 10px 20px 10px 5px;
+}
+h2 {
+  font-weight: bolder;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
   padding: 20px;
-  background-color: #2a607c;
+  border: 0;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
+}
+.sectionTitle {
+  border-color: #505050;
+  border-right: 5px;
+  color: cadetblue;
+  height: 100%;
+  width: 20%;
+}
+.content {
+  height: 100%;
+  width: 80%;
 }
