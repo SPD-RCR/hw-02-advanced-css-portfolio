@@ -1,34 +1,27 @@
 /* spd-rcr/hw-02-advanced-css-portfoliio/assets/css/style.css */
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
-  background-color: #d9dcd6;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12pt;
   color: #505050;
 }
 a {
-  color: cadetblue;
+  color: #06dada;
 }
-header {
+.header1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 3% 3% 0;
+  padding: 2% 2% 2% 0;
   background-color: #505050;
   height: 100%;
 }
-.headerTitle {
-  font-size: 20pt;
-  background-color: cadetblue;
+.header-title {
+  background-color: #06dada;
   border-top-right-radius: 10pt;
   border-bottom-left-radius: 10pt;
-  padding: 2%;
+  padding: 1%;
+  font-size: 2em;
 }
 h1 {
   padding-left: 30px;
@@ -39,28 +32,35 @@ nav ul li {
   padding: 10px 10px 10px 20px;
 }
 
-header .subheader {
-  background-color: slategray;
-  height: 100px;
+.header2 {
+  display: flex;
+  background-image: url("./../images/sub-header-background.png");
+  /* height: auto; */
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
-.myPhoto {
-  margin: 10px 10px 10px 50px;
+.header2 div {
+  font-size: 1.5em;
+  margin: 20px;
 }
-.subtitle {
-  background-color: cadetblue;
+.sub-title {
+  background-color: #06dada;
   border-top-right-radius: 10pt;
   border-bottom-left-radius: 10pt;
   padding: 1%;
-  margin: 10px 20px 10px 5px;
+  height: 40px;
+  /* margin: 10px 20px 10px 5px; */
 }
 h2 {
   font-weight: bolder;
 }
-
 main {
   display: flex;
   flex-flow: row wrap;
-  height: 100%;
+  height: auto;
   width: 100%;
   padding: 20px;
   border: 0;
@@ -70,15 +70,127 @@ section {
   flex-flow: row wrap;
   height: 100%;
   width: 100%;
+  margin: 1% 0 1% 0;
 }
-.sectionTitle {
-  border-color: #505050;
-  border-right: 5px;
-  color: cadetblue;
+.section-title {
+  font-size: 1.8em;
+  text-align: right;
+  padding-right: 1%;
   height: 100%;
   width: 20%;
 }
+h3 {
+  font-weight: bold;
+}
 .content {
-  height: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  border-left: 3px solid #06dada;
+  /* padding: 0 1% 0 1%; */
+  height: auto;
   width: 80%;
+}
+p {
+  padding: 0 1% 1% 1%;
+  width: 100vw;
+}
+
+.work-box-big {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 98%;
+  height: 300px;
+  border: 3px solid #06dada;
+  margin: 0 1% 1% 1%;
+  /* background-image: url("./../images/surfer-sunset.png");
+  background-size: auto;
+  background-position: bottom; */
+}
+#work01 {
+  background-color: burlywood;
+  background-image: url("./../images/surfer-sunset.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.work-box-small {
+  display: flex;
+  width: 48%;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 200px;
+  border: 3px solid #06dada;
+  margin: 0 1% 1% 1%;
+}
+
+#work02 {
+  background-color: red;
+  background-image: url("./../images/led-wall-158826-1024x685.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.title-box {
+  background-color: #06dada;
+  border-top-right-radius: 10pt;
+  border-bottom-left-radius: 10pt;
+  padding: 1%;
+  margin-bottom: 2%;
+  height: 40px;
+}
+
+.title-box h5 {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+#contact-me {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 1.8em;
+    text-align: left;
+    padding-left: 1%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul li {
+    display: flex;
+  }
+  .header2 {
+    justify-content: center;
+  }
+  .header2 div {
+    font-size: 1em;
+    margin: 20px;
+  }
+  .work-box-big {
+    height: 100px;
+  }
+  .work-box-small {
+    width: 98%;
+    height: 100px;
+  }
 }
