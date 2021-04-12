@@ -103,32 +103,35 @@ p {
   height: 300px;
   border: 3px solid #06dada;
   margin: 0 1% 1% 1%;
-  /* background-image: url("./../images/surfer-sunset.png");
-  background-size: auto;
-  background-position: bottom; */
-}
-#work01 {
-  background-color: burlywood;
-  background-image: url("./../images/surfer-sunset.png");
-  background-size: cover;
-  background-position: bottom;
 }
 
 .work-box-small {
   display: flex;
-  width: 48%;
   justify-content: flex-start;
   align-items: flex-end;
+  width: 48%;
   height: 200px;
   border: 3px solid #06dada;
   margin: 0 1% 1% 1%;
 }
 
+#work01 {
+  background-color: orange; /* left background-color in case broken image */
+  background-image: url("./../images/surfer-sunset.png");
+  background-size: cover;
+  background-position: bottom;
+}
 #work02 {
-  background-color: red;
+  background-color: red; /* left background-color in case broken image */
   background-image: url("./../images/led-wall-158826-1024x685.jpg");
   background-size: cover;
   background-position: bottom;
+}
+/* I would like to do a transition to duotone overlay but couldn't find example or couldn't think of how to adapt what I found on MDN Transition was ok and CSS Tricks */
+#work01:hover,
+#work02:hover {
+  opacity: 70%;
+  transition: 0.5s ease-in-out;
 }
 .title-box {
   background-color: #06dada;
