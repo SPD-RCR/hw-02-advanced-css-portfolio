@@ -13,7 +13,7 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 2% 2% 2% 0;
-  background-color: #505050;
+  background-color: #0d6efd; /* #505050; */
   height: 100%;
 }
 .header-title {
@@ -118,9 +118,11 @@ p {
 
 #work01 {
   background-color: orange; /* left background-color in case broken image */
-  background-image: url("./../images/surfer-sunset.png");
+  /* background-image: url("./../images/surfer-sunset.png"); */
+  background-image: url("./../images/weather-dashboard.png");
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
+  /* background-position: bottom; */
 }
 #work02 {
   background-color: #2a607c; /* left background-color in case broken image */
